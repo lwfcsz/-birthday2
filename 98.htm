@@ -80,7 +80,7 @@
         }
     </style>
 </head>
-<body class="bg-gradient-to-br from-pink-100 to-yellow-100 min-h-screen overflow-x-hidden font-cute relative">
+<body class="bg-gradient-to-br from-pink-100 to-yellow-100 min-h-screen overflow-hidden font-cute relative">
     <!-- 背景装饰 -->
     <div class="absolute inset-0 overflow-hidden pointer-events-none">
         <div class="absolute top-10 left-10 w-20 h-20 rounded-full bg-primary/10 animate-pulse-slow"></div>
@@ -89,53 +89,53 @@
     </div>
 
     <!-- 主内容 -->
-    <div class="container mx-auto px-4 py-6 sm:py-12 relative z-10">
+    <div class="container mx-auto px-4 py-12 relative z-10">
         <!-- 标题 -->
-        <h1 class="text-[clamp(1.8rem,8vw,3.5rem)] font-bold text-center text-primary mb-3 text-shadow-glow animate-fade-in">
+        <h1 class="text-[clamp(2rem,5vw,3.5rem)] font-bold text-center text-primary mb-4 text-shadow-glow animate-fade-in">
             亲爱的朋友 <span class="text-secondary">新岁平安顺意！</span>
         </h1>
-        <p class="text-[clamp(1rem,5vw,1.8rem)] text-center text-gray-700 mb-6 sm:mb-8 animate-fade-in" style="animation-delay: 0.3s">
+        <p class="text-[clamp(1.2rem,3vw,1.8rem)] text-center text-gray-700 mb-8 animate-fade-in" style="animation-delay: 0.3s">
             这是我陪你度过的第一个生日(｡◝ᴗ◜｡)
         </p>
 
         <!-- 贺卡主体 -->
-        <div class="bg-white rounded-2xl shadow-lg p-4 sm:p-6 max-w-xl mx-auto transform transition-all duration-500 hover:shadow-xl animate-scale-in">
-            <div class="flex flex-col items-center">
+        <div class="bg-white rounded-3xl shadow-xl p-6 md:p-10 max-w-3xl mx-auto transform transition-all duration-500 hover:shadow-2xl animate-scale-in">
+            <div class="flex flex-col md:flex-row items-center">
                 <!-- 左侧：可爱小女孩图片（替换为图片形式） -->
-                <div class="w-full mb-6 sm:mb-0 flex justify-center">
-                    <div class="img-frame animate-float w-full max-w-xs">
-                        <!-- 这里替换为实际照片链接 -->
-                        <img src="你的照片" 
-                             alt="可爱的女孩" 
-                             class="w-full h-auto object-cover rounded-lg"
+                <div class="w-full md:w-1/2 mb-8 md:mb-0 flex justify-center">
+                    <div class="img-frame animate-float">
+                        <!-- 这里使用免费可爱女孩插画，可替换为她的照片链接 -->
+                        <img src="6.png" 
+                             alt="可爱的小女孩" 
+                             class="w-64 h-80 object-cover object-center"
                              loading="lazy">
                         <!-- 图片底部装饰 -->
-                        <div class="absolute bottom-0 left-0 w-full h-12 bg-gradient-to-t from-white/80 to-transparent"></div>
+                        <div class="absolute bottom-0 left-0 w-full h-16 bg-gradient-to-t from-white/80 to-transparent"></div>
                         <!-- 生日小装饰 -->
-                        <div class="absolute top-3 right-3 w-10 h-10 bg-secondary rounded-full flex items-center justify-center text-primary">
-                            <i class="fa fa-birthday-cake text-xl"></i>
+                        <div class="absolute top-4 right-4 w-12 h-12 bg-secondary rounded-full flex items-center justify-center text-primary">
+                            <i class="fa fa-birthday-cake text-2xl"></i>
                         </div>
                     </div>
                 </div>
 
                 <!-- 右侧：祝福文字 -->
-                <div class="w-full mt-4 sm:mt-0">
-                    <div class="bg-pink-50 rounded-xl p-4 sm:p-6 shadow-inner">
-                        <h2 class="text-[clamp(1.2rem,6vw,2rem)] font-bold text-primary mb-3">
+                <div class="w-full md:w-1/2 md:pl-8">
+                    <div class="bg-pink-50 rounded-2xl p-6 shadow-inner">
+                        <h2 class="text-[clamp(1.5rem,3vw,2rem)] font-bold text-primary mb-4">
                         致最可爱的女孩(´つヮ⊂︎)
                         </h2>
-                        <p class="text-gray-700 mb-2 leading-relaxed text-sm sm:text-base">
+                        <p class="text-gray-700 mb-3 leading-relaxed">
                             今天是你的20岁生日，也是我陪你度过的第一个生日。
                         </p>
-                        <p class="text-gray-700 mb-3 leading-relaxed text-sm sm:text-base">
+                        <p class="text-gray-700 mb-3 leading-relaxed">
                             希望你永远保持这份纯真和笑容，未来的日子里，
                             无论遇到什么困难，我都会一直在你身边支持你、还是支持你。
                         </p>
-                        <p class="text-gray-700 mb-4 leading-relaxed text-sm sm:text-base">
+                        <p class="text-gray-700 mb-4 leading-relaxed">
                             愿你接下来的路顺风顺水，老爷会永远保佑每一个在外的潮汕孩子。
                         </p>
                         <div class="flex justify-center">
-                            <button id="celebrate-btn" class="bg-primary hover:bg-pink-600 text-white font-bold py-2 px-6 rounded-full transition-all duration-300 transform hover:scale-105 shadow flex items-center text-sm">
+                            <button id="celebrate-btn" class="bg-primary hover:bg-pink-600 text-white font-bold py-3 px-8 rounded-full transition-all duration-300 transform hover:scale-105 shadow-lg flex items-center">
                                 <i class="fa fa-heart mr-2"></i> 一起庆祝
                             </button>
                         </div>
@@ -145,7 +145,7 @@
         </div>
 
         <!-- 底部提示（替换图片指南） -->
-        <p class="text-center text-gray-500 mt-6 text-xs sm:text-sm">
+        <p class="text-center text-gray-500 mt-8 text-sm">
             <i class="fa fa-picture-o mr-2"></i>我陪你的第一个生日(๑ت๑)
         </p>
     </div>
